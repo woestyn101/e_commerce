@@ -1,0 +1,8 @@
+http://localhost:3005/api/categories/
+
+http://localhost:3005/api/products
+
+http://localhost:3005/api/tags
+
+
+

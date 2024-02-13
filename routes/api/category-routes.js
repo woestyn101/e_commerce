@@ -8,9 +8,11 @@ router.get('/', (req, res) => {
   // be sure to include its associated Products
   Category.findAll({
     include:[Product],
-  }).then((categories) => 
-    res.json(categories)
-  );
+  }).then((categories) => {
+
+    res.json(categories);
+  });
+  
 });
 
 router.get('/:id', (req, res) => {
