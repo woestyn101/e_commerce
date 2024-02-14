@@ -39,7 +39,7 @@ During this project I learned how to:
   
 ## Video
 
-https://drive.google.com/file/d/1SHq1qjDCqv24UIbXe9e96qLidYFZbEza/view?usp=sharing
+https://drive.google.com/file/d/1wnwqNXqbFcw0-7IS5ksbhcvEcwnGEOuQ/view?usp=sharing
 
 
 ## Usage
