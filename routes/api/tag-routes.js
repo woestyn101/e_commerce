@@ -30,10 +30,14 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
   // create a new tag
-  Tag.create({
-    tag_name: 'super',
+  Tag.create(
+  //   {
+  //   "tag_name": "super",
 
-  })
+  // }
+  req.body
+  
+  )
   .then((new_tag) => {
     // Sends the updated book as a json response
     res.json(new_tag);
@@ -43,10 +47,14 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update a tag's name by its `id` value
-  Tag.update({
-    tag_name: 'Ultra',
+  Tag.update(
+    
+  //   {
+  //   tag_name: 'Ultra',
 
-  }, 
+  // }
+  req.body
+  , 
   {
     // Gets the books based on the isbn given in the request parameters
     where: {

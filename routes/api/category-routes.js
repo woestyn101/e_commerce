@@ -1,4 +1,6 @@
 const router = require('express').Router();
+
+// importing models to be used in routes
 const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
@@ -29,10 +31,13 @@ router.get('/:id', (req, res) => {
 
 router.post('/', (req, res) => {
   // create a new category
-  Category.create({
-    category_name: 'Pants',
+  Category.create(
+  //   {
+  //   category_name: 'Pants',
 
-  })
+  // }
+  req.body
+  )
   .then((new_cat) => {
     // Sends the updated book as a json response
     res.json(new_cat);
@@ -42,10 +47,13 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update a category by its `id` value
-  Category.update({
-    category_name: 'LongPants',
+  Category.update(
+  //   {
+  //   category_name: 'LongPants',
 
-  }, 
+  // }
+  req.body
+  , 
   {
     // Gets the books based on the isbn given in the request parameters
     where: {

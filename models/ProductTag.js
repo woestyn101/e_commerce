@@ -1,7 +1,11 @@
+// destructing sequelize model and datatypes
+
 const { Model, DataTypes } = require('sequelize');
 
+// importing config file to make connection with datbase
 const sequelize = require('../config/connection');
 
+// definining the model for ProductTag
 class ProductTag extends Model {}
 
 ProductTag.init(
