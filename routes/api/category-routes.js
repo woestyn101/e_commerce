@@ -52,9 +52,9 @@ router.put('/:id', (req, res) => {
         id: req.params.id,
     },
   })
-  .then((new_cat) => {
+  .then((updated_cat) => {
     // Sends the updated book as a json response
-    res.json(new_cat);
+    res.json(updated_cat);
   })
   .catch((err) => res.json(err));
 });
